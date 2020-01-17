@@ -1,3 +1,5 @@
+BEGIN;
+
 INSERT INTO shopping_list (name, price, category, checked, date_added)
 VALUES
     ('Fish tricks', 13.10, 'Main',              false,  now() - '21 days'::INTERVAL),
@@ -32,3 +34,5 @@ VALUES
     ('Chili non-carne', 5.88, 'Main',           true,   now()),
     ('Don''t go bacon my heart', 4.20, 'Main',  false,  now())
 ;
+
+COMMIT;
